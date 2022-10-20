@@ -20,3 +20,15 @@ x, y=15, "Elisa"
 frutta=["mela","banana","anguria"]
 d, e, f=frutta
 print(d, e, f) #per stampare più variabili in contemporanea posso scrivere il nome delle variabili separate da una virgola o dal +
+g=5
+h=10 
+print(g+h) #se ho delle parole me le stamperà come una frase (come se ci fosse la , al posto del +), invede se le cariabili sono dei numeri mi stamperà la somma tra essi
+
+#
+i = "Pallavolo"
+def myfunc():
+    i = "danza" #se si da un nome ad una variabile dentro ad una infuctions questo valore vale solo dentro alla funzione
+    print("Lo sport preferito è la " + i)
+
+myfunc()
+print("Lo sport preferito è la " + i)

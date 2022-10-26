@@ -28,3 +28,19 @@ print(frutta)
 #se voglio inserire un nuovo elemento scrivo
 frutta.insert(2,"uva") #in posizione 2 ha messo uva
 print(frutta)
+#per aggiungere un elemento alla fine della lista scrivo
+frutta.append("fragola")
+frutta.insert(1, "ciliegia") #aggiunge ciliegia nella posizione 1
+verdura=["zucchina", "carota","finocchi"]
+frutta.extend(verdura) #unisce le due liste
+print(frutta)
+frutta.remove("banana") #rimuove banana dalla lista
+frutta.pop(3) #cancella l'elemento in quella posizione. se non metto il numero si elimina l'ultimo elemento della lista
+del frutta[1] #cancella l'elemento in quella posizione
+del frutta #cancella la lista
+frutta.clear() #cancella tutti gli elementi, ma non la lista
+#per stampare tutti gli elementi della lista, uno per uno
+for x in frutta:
+        print(x)
+
+

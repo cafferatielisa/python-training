@@ -85,4 +85,11 @@ def myfunc(n):
 
 numeri = [100, 50, 65, 82, 23]
 numeri.sort(key = myfunc)
-#
+#ordinamento dell'elenco senza distinzione tra maiuscole e minuscole
+frutta.sort(key = str.lower)
+#Invertire l'ordine delle voci dell'elenco
+frutta.reverse()
+#Fare una copia di una lista con il copy()metodo
+listafrutta = frutta.copy()
+#Fare una copia di una lista con il list()metodo
+listafrutta = list(frutta)

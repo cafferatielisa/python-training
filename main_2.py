@@ -93,3 +93,13 @@ frutta.reverse()
 listafrutta = frutta.copy()
 #Fare una copia di una lista con il list()metodo
 listafrutta = list(frutta)
+#unire 2 liste
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+#Aggiungi list2 in list1
+for x in list2:
+  list1.append(x)
+#Usa il extend()metodo per aggiungere list2 alla fine di list1
+list1.extend(list2)

@@ -34,13 +34,55 @@ frutta.insert(1, "ciliegia") #aggiunge ciliegia nella posizione 1
 verdura=["zucchina", "carota","finocchi"]
 frutta.extend(verdura) #unisce le due liste
 print(frutta)
-frutta.remove("banana") #rimuove banana dalla lista
+frutta.remove("uva") #rimuove banana dalla lista
 frutta.pop(3) #cancella l'elemento in quella posizione. se non metto il numero si elimina l'ultimo elemento della lista
 del frutta[1] #cancella l'elemento in quella posizione
 del frutta #cancella la lista
+frutta = ["mela", "banana", "ciliegia", "pera","kiwi", "anguria"]
 frutta.clear() #cancella tutti gli elementi, ma non la lista
 #per stampare tutti gli elementi della lista, uno per uno
 for x in frutta:
-        print(x)
+    print(x)
+#
+for i in range(len(frutta)):
+    print(frutta[i])
+#Print all items, using a while loop to go through all the index numbers
+i = 0
+while i < len(frutta):
+  print(frutta[i])
+  i = i + 1
+#A short hand for loop that will print all items in a list
+[print(x) for x in frutta]
+#per ogni lettera u presente nella lista frutta, aggiunge la parola che contiene quella lettera nella nuova lista
+#la posso scrivere sia così
+newlist = []
+for x in frutta:
+  if "u" in x:
+    newlist.append(x)
+print(newlist)
+#sia così
+newlist = [x for x in frutta if "a" in x]
+#newlist = [expression for item in iterable if condition == True]
+newlist = [x for x in frutta if x != "mela"] #accetta tutti gli elementi che non siano mela
+#if x != "apple" , accetta tutti gli elementi che non siano mela
+#crea una lista con 10 numeri, da 0 a 9
+newlist = [x for x in range(10)]
+#accetta numeri minori di 5
+newlist = [x for x in range(10) if x < 5]
+#tutti gli elementi di quella lista li scrive in stampatello maiuscolo
+newlist = [x.upper() for x in frutta]
+#sostituisce tutti gli elementi della lista con hello
+newlist = ['hello' for x in frutta]
+#sostituisce tutti gli elementi banana con arancia
+newlist = [x if x != "banana" else "arancia" for x in frutta]
+#ordina la lista in ordine alfabetico o numerico(dal più piccolo al più grande)
+frutta.sort() #tutte le lettere maiuscole vengono ordinate prima delle lettere minuscole
+##ordina la lista in ordine alfabetico al contrario o numerico(dal più grande al più piccolo)
+frutta.sort(reverse = True)
+#ordina i numeri a seconda di quanto sono vicini al numero 50
+def myfunc(n):
+  return abs(n - 50)
 
-
+numeri = [100, 50, 65, 82, 23]
+numeri.sort(key = myfunc)
+#

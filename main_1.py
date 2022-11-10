@@ -31,4 +31,4 @@ def myfunc():
     print("Lo sport preferito è la " + i)
 
 myfunc()
-print("Lo sport preferito è la " + i)
+print("Lo sport preferito è la " + i) 

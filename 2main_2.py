@@ -73,3 +73,4 @@ def tri_recursion(k):
     result = 0
   return result
 tri_recursion(6)
+

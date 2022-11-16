@@ -45,3 +45,31 @@ funzione7("India")
 funzione7()
 funzione7("Brasile")
 
+#se nell'argomento metto il nome di una lista, la funzione viene eseguita per quella lista
+def funzione8(cibo):
+  for x in cibo:
+    print(x)
+frutta = ["mela", "banana", "ciliegia"]
+funzione8(frutta)
+
+#per farci restituire il risultato della funzione uso return
+def funzione9(x):
+  return 5 * x
+
+print(funzione9(3))
+print(funzione9(5))
+print(funzione9(9))#in questo caso mi dirà la soluzione di questa moltiplicazione
+
+#se per qualche motivo la funzione la devo lasciare vuota uso pass
+def funzionevuota():
+  pass
+
+#spiegazione sul foglio
+def tri_recursion(k):
+  if(k > 0):
+    result = k + tri_recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
+tri_recursion(6)

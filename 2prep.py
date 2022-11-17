@@ -13,9 +13,6 @@
 #print(num)
 
 #esercizio 3
-#numero6,numero7,numero8,numero9,numero10=input("dimmi un numero"), input(), input(),input(),input()
-#numeri=[int(numero6),numero7,numero8,numero9,numero10]
-
 #num = []
 #for x in range(5):
 #    y = input("Dimmi un numero")
@@ -28,3 +25,7 @@
 #print(numeripari)
 
 #esercizio 4
+x=input("Quanti numeri vuoi inserire? ")
+for n in range(x):
+   y = input("Dimmi un numero: ")
+   num.append(int(y))

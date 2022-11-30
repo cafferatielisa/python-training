@@ -25,7 +25,17 @@
 #print(numeripari)
 
 #esercizio 4
-x=input("Quanti numeri vuoi inserire? ")
-for n in range(x):
-   y = input("Dimmi un numero: ")
-   num.append(int(y))
+#x=input("Quanti numeri vuoi inserire? ")
+#for n in range(x):
+#   y = input("Dimmi un numero: ")
+#   num.append(int(y))
+#esercizio J
+
+listanumeri=[]
+
+def funzione:
+   x=input("Quanti numeri vuoi inserire? ")
+      for n in range(x):
+          y = input("Dimmi un numero: ")
+            listanumeri.append(int(y))
+print(listanumeri)

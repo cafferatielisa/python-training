@@ -33,9 +33,9 @@
 
 listanumeri=[]
 
-def funzione:
-   x=input("Quanti numeri vuoi inserire? ")
+def funzione(a):
+   x=int(input("Quanti numeri vuoi inserire? "))
       for n in range(x):
-          y = input("Dimmi un numero: ")
-            listanumeri.append(int(y))
+         y = int(input("Dimmi un numero: "))
+         listanumeri.append(int(y))
 print(listanumeri)
